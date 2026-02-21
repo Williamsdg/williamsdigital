@@ -450,6 +450,24 @@ ul {
   margin: 0 auto;
 }
 
+.section-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.section-title-sub {
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75em;
+  color: var(--gray-500);
+  margin-top: 4px;
+}
+
 .section-cta {
   text-align: center;
   margin-top: 48px;
@@ -665,48 +683,101 @@ ul {
   background: var(--cream);
 }
 
-.catering-grid {
+.catering-options {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.catering-option {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-}
-
-.catering-card {
-  background: var(--white);
+  grid-template-columns: 1fr 1fr;
   border-radius: var(--radius-lg);
-  padding: 40px;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--white);
+  transition: box-shadow var(--transition);
 }
 
-.catering-card:hover {
-  transform: translateY(-4px);
+.catering-option:hover {
   box-shadow: var(--shadow-lg);
 }
 
-.catering-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.catering-option-reverse {
+  direction: rtl;
+}
+
+.catering-option-reverse > * {
+  direction: ltr;
+}
+
+.catering-option-image {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.catering-option-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.catering-option:hover .catering-option-image img {
+  transform: scale(1.04);
+}
+
+.catering-option-tags {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.catering-option-tags span {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+.catering-option-content {
+  padding: 52px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.catering-option-content .catering-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   background: rgba(71, 118, 59, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--green);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-.catering-card h3 {
+.catering-option-content h3 {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-.catering-card p {
+.catering-option-content p {
   color: var(--gray-500);
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 20px;
 }
 
@@ -727,6 +798,25 @@ ul {
   position: absolute;
   left: 0;
   color: var(--green);
+  font-weight: 700;
+}
+
+.catering-option-footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.catering-pricing {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  white-space: nowrap;
+}
+
+.catering-pricing strong {
+  color: var(--green);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -1273,9 +1363,31 @@ ul {
     margin: 0 auto;
   }
 
-  .locations-grid,
-  .catering-grid {
+  .locations-grid {
     grid-template-columns: 1fr;
+  }
+
+  .catering-option {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .catering-option-reverse {
+    direction: ltr;
+  }
+
+  .catering-option-image {
+    min-height: 260px;
+  }
+
+  .catering-option-content {
+    padding: 32px 24px;
+  }
+
+  .catering-option-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .testimonial-card {
