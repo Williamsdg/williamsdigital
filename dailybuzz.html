@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Buzz Coffee | Birmingham's Historic Harris Building</title>
+  <meta name="description" content="Daily Buzz Coffee — craft coffee in Birmingham's Historic Harris Building. Order ahead, skip the wait, and enjoy your daily buzz.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="dailybuzz.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="dailybuzz.html" class="logo">
+        <span class="logo-icon">&#9749;</span>
+        <div class="logo-text-group">
+          <span class="logo-text">DAILY BUZZ</span>
+          <span class="logo-sub">COFFEE</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#order" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#order" class="btn btn-primary">Order Now</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&q=80" alt="Coffee shop ambiance" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-tag">Birmingham's Historic Harris Building</p>
+      <h1 class="hero-title">Ready for Your<br><span>Daily Buzz?</span></h1>
+      <p class="hero-desc">Craft coffee made with care. Bold flavors, warm vibes, and the perfect start to your day &mdash; every day.</p>
+      <div class="hero-actions">
+        <a href="#order" class="btn btn-primary btn-lg">Order Ahead</a>
+        <a href="#menu" class="btn btn-outline-light btn-lg">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Order Ahead -->
+  <section class="section order-section" id="order">
+    <div class="container">
+      <div class="order-grid">
+        <div class="order-content">
+          <p class="section-eyebrow">Skip the Wait</p>
+          <h2 class="section-title">Order Ahead &amp;<br>We'll Have It Ready</h2>
+          <p>Order ahead, and we'll have your coffee fresh, hot, and ready when you arrive. No lines, no waiting &mdash; just your perfect cup.</p>
+          <div class="order-steps">
+            <div class="order-step">
+              <div class="step-number">1</div>
+              <div>
+                <h4>Browse &amp; Choose</h4>
+                <p>Pick your favorite from our full menu</p>
+              </div>
+            </div>
+            <div class="order-step">
+              <div class="step-number">2</div>
+              <div>
+                <h4>Place Your Order</h4>
+                <p>Customize it just the way you like</p>
+              </div>
+            </div>
+            <div class="order-step">
+              <div class="step-number">3</div>
+              <div>
+                <h4>Pick Up &amp; Enjoy</h4>
+                <p>Walk in, grab your drink, and go</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Start Your Order</a>
+        </div>
+        <div class="order-image">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80" alt="Freshly brewed coffee being poured" loading="lazy">
+          <div class="order-image-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Menu</p>
+        <h2 class="section-title">Something for Every Mood</h2>
+        <p class="section-subtitle">From bold espressos to smooth cold brews, crafted with Birmingham's favorite beans.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="hot">Hot Drinks</button>
+        <button class="menu-tab" data-tab="iced">Iced Drinks</button>
+        <button class="menu-tab" data-tab="signature">Signature</button>
+        <button class="menu-tab" data-tab="food">Food &amp; Pastries</button>
+      </div>
+
+      <div class="menu-panels">
+        <!-- Hot Drinks -->
+        <div class="menu-panel active" id="panel-hot">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Drip Coffee</h4>
+                <span class="menu-price">$3.50</span>
+              </div>
+              <p>Fresh-brewed, smooth, and reliable</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Americano</h4>
+                <span class="menu-price">$4.25</span>
+              </div>
+              <p>Bold espresso with hot water</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Cappuccino</h4>
+                <span class="menu-price">$5.00</span>
+              </div>
+              <p>Velvety foam meets rich espresso</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Latte</h4>
+                <span class="menu-price">$5.25</span>
+              </div>
+              <p>Smooth, creamy, and perfectly balanced</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Mocha</h4>
+                <span class="menu-price">$5.75</span>
+              </div>
+              <p>Chocolate and espresso indulgence</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Flat White</h4>
+                <span class="menu-price">$5.25</span>
+              </div>
+              <p>Silky microfoam, double ristretto</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Iced Drinks -->
+        <div class="menu-panel" id="panel-iced">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Iced Coffee</h4>
+                <span class="menu-price">$4.00</span>
+              </div>
+              <p>Cold-brewed for 18 hours, naturally sweet</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Iced Latte</h4>
+                <span class="menu-price">$5.50</span>
+              </div>
+              <p>Espresso over ice with cold milk</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Cold Brew</h4>
+                <span class="menu-price">$5.00</span>
+              </div>
+              <p>Smooth, bold, and never bitter</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Iced Mocha</h4>
+                <span class="menu-price">$6.00</span>
+              </div>
+              <p>Chocolate-espresso bliss on ice</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Iced Matcha Latte</h4>
+                <span class="menu-price">$5.75</span>
+              </div>
+              <p>Ceremonial grade matcha, oat milk</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Vietnamese Iced Coffee</h4>
+                <span class="menu-price">$5.50</span>
+              </div>
+              <p>Dark roast with sweetened condensed milk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signature -->
+        <div class="menu-panel" id="panel-signature">
+          <div class="menu-grid">
+            <div class="menu-item featured">
+              <div class="menu-item-badge">Fan Favorite</div>
+              <div class="menu-item-header">
+                <h4>The Daily Buzz</h4>
+                <span class="menu-price">$6.50</span>
+              </div>
+              <p>Our signature blend with vanilla, caramel, and a buzz of espresso</p>
+            </div>
+            <div class="menu-item featured">
+              <div class="menu-item-badge">Seasonal</div>
+              <div class="menu-item-header">
+                <h4>Harris House Special</h4>
+                <span class="menu-price">$6.75</span>
+              </div>
+              <p>Brown sugar oat milk latte with cinnamon</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Honey Lavender Latte</h4>
+                <span class="menu-price">$6.25</span>
+              </div>
+              <p>Floral and sweet with local honey</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Magic City Mocha</h4>
+                <span class="menu-price">$6.50</span>
+              </div>
+              <p>Dark chocolate, espresso, and a hint of chili</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food & Pastries -->
+        <div class="menu-panel" id="panel-food">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Empanadas</h4>
+                <span class="menu-price">$4.50</span>
+              </div>
+              <p>Savory hand-pies, rotating flavors daily</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Butter Croissant</h4>
+                <span class="menu-price">$3.75</span>
+              </div>
+              <p>Flaky, golden, baked fresh every morning</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Banana Bread</h4>
+                <span class="menu-price">$3.50</span>
+              </div>
+              <p>Moist and walnut-studded</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Everything Bagel &amp; Cream Cheese</h4>
+                <span class="menu-price">$4.25</span>
+              </div>
+              <p>Toasted and generously topped</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Chocolate Chip Cookie</h4>
+                <span class="menu-price">$3.00</span>
+              </div>
+              <p>Warm, gooey, and oversized</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4>Avocado Toast</h4>
+                <span class="menu-price">$7.50</span>
+              </div>
+              <p>Sourdough, smashed avo, everything seasoning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="section testimonial-section">
+    <div class="container">
+      <div class="testimonial-card-large">
+        <div class="testimonial-quote">&ldquo;</div>
+        <blockquote>
+          The coffee is truly exceptional. Light acidity, soft body, nuanced &mdash; you can tell they care about every cup. Daily Buzz has become my morning ritual.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div>
+            <cite>Jordan M.</cite>
+            <span>Regular since 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-image">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="Daily Buzz Coffee interior" loading="lazy">
+        </div>
+        <div class="location-info">
+          <p class="section-eyebrow">Visit Us</p>
+          <h2 class="section-title">The Harris Building</h2>
+          <p class="location-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Birmingham's Historic Harris Building<br>Birmingham, AL
+          </p>
+          <div class="hours-card">
+            <h4>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Hours
+            </h4>
+            <ul>
+              <li><span>Monday &ndash; Friday</span><span>7:00 AM &ndash; 5:00 PM</span></li>
+              <li><span>Saturday</span><span>8:00 AM &ndash; 5:00 PM</span></li>
+              <li><span>Sunday</span><span>8:00 AM &ndash; 3:00 PM</span></li>
+            </ul>
+          </div>
+          <div class="location-actions">
+            <a href="https://maps.google.com/?q=Harris+Building+Birmingham+AL" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+            <div class="social-links">
+              <a href="https://instagram.com/dailybuzzcoffee" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="mailto:coffee@dailybuzzbham.com" aria-label="Email">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section newsletter-section" id="contact">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Stay in the Loop</h2>
+        <p>New menu drops, seasonal specials, and events &mdash; straight to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" required aria-label="Email address">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">&#9749;</span>
+            <div class="logo-text-group">
+              <span class="logo-text">DAILY BUZZ</span>
+              <span class="logo-sub">COFFEE</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Craft coffee in Birmingham's<br>Historic Harris Building.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#order">Order Ahead</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://instagram.com/dailybuzzcoffee" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="mailto:coffee@dailybuzzbham.com">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Daily Buzz Coffee. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dailybuzz.js"></script>
+</body>
+</html>
