@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Boxcar Cafe at Railroad Park | Birmingham, AL</title>
+  <meta name="description" content="Michael's @ The Boxcar - Outdoor dining at Railroad Park, Birmingham's Front Lawn. Sandwiches, salads, coffee & craft beverages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="boxcar-cafe.css">
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-scene">
+      <!-- Sky / atmosphere -->
+      <div class="loader-sky"></div>
+
+      <!-- Logo that appears after boxcar arrives -->
+      <div class="loader-logo" id="loaderLogo">
+        <div class="loader-logo-icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="15" width="50" height="32" rx="3" fill="#B5543F" stroke="#8B3A2F" stroke-width="2"/>
+            <rect x="12" y="20" width="14" height="10" rx="1" fill="#F5F0E8" opacity="0.3"/>
+            <rect x="34" y="20" width="14" height="10" rx="1" fill="#F5F0E8" opacity="0.3"/>
+            <line x1="5" y1="35" x2="55" y2="35" stroke="#8B3A2F" stroke-width="2"/>
+            <circle cx="18" cy="49" r="5" fill="#3A3A3A" stroke="#555" stroke-width="1.5"/>
+            <circle cx="42" cy="49" r="5" fill="#3A3A3A" stroke="#555" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span class="loader-logo-top">The</span>
+        <h1 class="loader-logo-title">BOXCAR<br>CAFE</h1>
+        <span class="loader-logo-sub">at Railroad Park</span>
+      </div>
+
+      <!-- Animated boxcar -->
+      <div class="boxcar-track">
+        <div class="boxcar-wrapper" id="boxcarWrapper">
+          <!-- Steam puffs -->
+          <div class="steam">
+            <div class="steam-puff s1"></div>
+            <div class="steam-puff s2"></div>
+            <div class="steam-puff s3"></div>
+          </div>
+          <!-- The car -->
+          <div class="boxcar">
+            <div class="boxcar-body">
+              <div class="boxcar-rivet r1"></div>
+              <div class="boxcar-rivet r2"></div>
+              <div class="boxcar-rivet r3"></div>
+              <div class="boxcar-rivet r4"></div>
+              <div class="boxcar-door"></div>
+              <span class="boxcar-text">BOXCAR</span>
+            </div>
+            <div class="boxcar-undercarriage"></div>
+            <div class="wheel wh-left">
+              <div class="wheel-inner"></div>
+              <div class="wheel-spoke sp1"></div>
+              <div class="wheel-spoke sp2"></div>
+            </div>
+            <div class="wheel wh-right">
+              <div class="wheel-inner"></div>
+              <div class="wheel-spoke sp1"></div>
+              <div class="wheel-spoke sp2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Rails -->
+        <div class="rails">
+          <div class="rail rail-top"></div>
+          <div class="rail rail-bottom"></div>
+          <div class="ties">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="32" height="20" rx="2" fill="#B5543F"/>
+          <rect x="9" y="14" width="8" height="6" rx="1" fill="#F5F0E8" opacity="0.35"/>
+          <rect x="23" y="14" width="8" height="6" rx="1" fill="#F5F0E8" opacity="0.35"/>
+          <circle cx="13" cy="33" r="3.5" fill="#2C2418" stroke="#B5543F" stroke-width="1"/>
+          <circle cx="27" cy="33" r="3.5" fill="#2C2418" stroke="#B5543F" stroke-width="1"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">BOXCAR CAFE</span>
+          <span class="logo-tagline">at Railroad Park</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#visit" class="nav-link">Visit</a>
+        <a href="#contact" class="nav-link btn-nav">Order Ahead</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#menu" class="mobile-link">Menu</a>
+    <a href="#events" class="mobile-link">Events</a>
+    <a href="#visit" class="mobile-link">Visit</a>
+    <a href="#contact" class="mobile-link btn-mobile">Order Ahead</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80" alt="Outdoor dining" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="hero-badge">Birmingham's Front Lawn</span>
+      <h1 class="hero-title">Dine Outdoors<br>at the Park</h1>
+      <p class="hero-desc">Enjoy handcrafted sandwiches, fresh salads, and craft beverages in the heart of Railroad Park.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#visit" class="btn btn-outline">Plan Your Visit</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80" alt="Boxcar Cafe outdoor seating">
+          </div>
+          <div class="about-img-accent">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Fresh coffee">
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">A Railroad Park<br>Tradition</h2>
+          <p class="about-text">Nestled at the Regions Bank 17th Street Plaza, The Boxcar Cafe is Birmingham's favorite outdoor dining destination. Our name pays homage to the park's railroad heritage, with our venue designed to echo the scale and charm of a classic railway boxcar.</p>
+          <p class="about-text">Now operated as Michael's @ The Boxcar, we bring restaurant-quality cuisine to the park's relaxing atmosphere. From our signature Cuban sandwich to ice-cold craft beverages, every visit is a taste of what makes Birmingham special.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">19</span>
+              <span class="stat-label">Acre Park</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2010</span>
+              <span class="stat-label">Est. Year</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">7</span>
+              <span class="stat-label">Days Open</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Fresh Sandwiches</span>
+      <span class="marquee-dot"></span>
+      <span>Craft Beverages</span>
+      <span class="marquee-dot"></span>
+      <span>Outdoor Dining</span>
+      <span class="marquee-dot"></span>
+      <span>Railroad Park</span>
+      <span class="marquee-dot"></span>
+      <span>Birmingham's Front Lawn</span>
+      <span class="marquee-dot"></span>
+      <span>Fresh Sandwiches</span>
+      <span class="marquee-dot"></span>
+      <span>Craft Beverages</span>
+      <span class="marquee-dot"></span>
+      <span>Outdoor Dining</span>
+      <span class="marquee-dot"></span>
+      <span>Railroad Park</span>
+      <span class="marquee-dot"></span>
+      <span>Birmingham's Front Lawn</span>
+      <span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- ========== MENU ========== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Menu</span>
+        <h2 class="section-title">Park Favorites</h2>
+        <p class="section-desc">From signature sandwiches to refreshing beverages, crafted with care for your outdoor dining experience.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="sandwiches">Sandwiches</button>
+        <button class="menu-tab" data-tab="salads">Salads & Sides</button>
+        <button class="menu-tab" data-tab="beverages">Beverages</button>
+      </div>
+
+      <div class="menu-panel active" id="sandwiches">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=500&q=80" alt="Cuban Sandwich">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>The Cuban</h3>
+                <span class="menu-price">$13</span>
+              </div>
+              <p>Our signature authentic Cuban sandwich with slow-roasted pork, ham, Swiss, pickles & mustard on pressed bread.</p>
+              <span class="menu-tag">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=500&q=80" alt="Reuben Sandwich">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>The Reuben</h3>
+                <span class="menu-price">$14</span>
+              </div>
+              <p>Praised as the best in town. Corned beef, sauerkraut, Swiss cheese & Russian dressing on marble rye.</p>
+              <span class="menu-tag">Fan Favorite</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=500&q=80" alt="Club Sandwich">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>The Railyard Club</h3>
+                <span class="menu-price">$12</span>
+              </div>
+              <p>Turkey, bacon, lettuce, tomato & avocado with herb aioli on toasted sourdough.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1481070555726-e2fe8357b3e3?w=500&q=80" alt="Grilled Cheese">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Parkside Melt</h3>
+                <span class="menu-price">$10</span>
+              </div>
+              <p>Three-cheese grilled sandwich with caramelized onions & tomato soup for dipping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="salads">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Garden Salad">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>The Front Lawn</h3>
+                <span class="menu-price">$11</span>
+              </div>
+              <p>Mixed greens, cherry tomatoes, cucumber, shaved parmesan & house vinaigrette.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=500&q=80" alt="Caesar Salad">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Station Caesar</h3>
+                <span class="menu-price">$12</span>
+              </div>
+              <p>Crisp romaine, parmesan crisps, focaccia croutons & classic Caesar dressing. Add grilled chicken +$4.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Fries">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Track Side Fries</h3>
+                <span class="menu-price">$6</span>
+              </div>
+              <p>Hand-cut fries seasoned with our signature spice blend. Add cheese sauce +$2.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1534938665-4f79b30ca3b1?w=500&q=80" alt="Soup">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Daily Soup</h3>
+                <span class="menu-price">$7</span>
+              </div>
+              <p>Rotating seasonal soups made fresh each morning. Ask about today's selection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="beverages">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80" alt="Cold Brew">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Cold Brew</h3>
+                <span class="menu-price">$5</span>
+              </div>
+              <p>Slow-steeped for 18 hours. Smooth, bold, and perfect for warm park days.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed514?w=500&q=80" alt="Fresh Lemonade">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Park Lemonade</h3>
+                <span class="menu-price">$4</span>
+              </div>
+              <p>House-squeezed lemonade with a hint of mint. Seasonal fruit flavors available.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=500&q=80" alt="Craft Beer">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Local Drafts</h3>
+                <span class="menu-price">$7</span>
+              </div>
+              <p>Rotating selection of Alabama craft beers on tap. Ask your server for today's pours.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&q=80" alt="Cocktail">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Boxcar Spritz</h3>
+                <span class="menu-price">$10</span>
+              </div>
+              <p>Our signature cocktail with Aperol, prosecco & a splash of soda. Refreshingly bright.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE BANNER ========== -->
+  <section class="feature-banner">
+    <div class="feature-bg">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Railroad Park views">
+      <div class="feature-overlay"></div>
+    </div>
+    <div class="container feature-content">
+      <span class="section-label light">The Experience</span>
+      <h2 class="feature-title">Dining With a View</h2>
+      <p class="feature-desc">Enjoy your meal alongside the park's stunning lake paths, green spaces, and skyline views. The Boxcar Cafe is the only place in Railroad Park where you can grab a cold craft beer, a signature sandwich, and soak in Birmingham's beautiful front lawn.</p>
+      <a href="#visit" class="btn btn-primary">Plan Your Visit</a>
+    </div>
+  </section>
+
+  <!-- ========== EVENTS ========== -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What's Happening</span>
+        <h2 class="section-title">Park Events</h2>
+        <p class="section-desc">The Boxcar Cafe is open for special events, live music, and seasonal celebrations throughout the year.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80" alt="Live music event">
+            <div class="event-date">
+              <span class="event-month">MAR</span>
+              <span class="event-day">15</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <h3>Live Music Fridays</h3>
+            <p>Local artists perform every Friday evening. Grab a drink and enjoy the sounds of Birmingham.</p>
+            <span class="event-time">5:00 PM - 8:00 PM</span>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Food festival">
+            <div class="event-date">
+              <span class="event-month">APR</span>
+              <span class="event-day">05</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <h3>Spring Kickoff Cookout</h3>
+            <p>Celebrating the return of warm weather with special menu items, yard games, and family fun.</p>
+            <span class="event-time">11:00 AM - 6:00 PM</span>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-img">
+            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&q=80" alt="Private event">
+            <div class="event-date">
+              <span class="event-month">ANY</span>
+              <span class="event-day">DAY</span>
+            </div>
+          </div>
+          <div class="event-body">
+            <h3>Private Events</h3>
+            <p>Host your next gathering at Railroad Park. Corporate events, celebrations, and more.</p>
+            <span class="event-time">Contact for availability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VISIT / LOCATION ========== -->
+  <section class="section visit" id="visit">
+    <div class="container">
+      <div class="visit-grid">
+        <div class="visit-content">
+          <span class="section-label">Find Us</span>
+          <h2 class="section-title">Visit the Boxcar</h2>
+          <p class="visit-text">We're located at the Regions Bank 17th Street Plaza inside Railroad Park. Look for the boxcar-inspired structures under the main pavilion.</p>
+
+          <div class="visit-details">
+            <div class="visit-item">
+              <div class="visit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Address</strong>
+                <p>1600 1st Ave S<br>Birmingham, AL 35233</p>
+              </div>
+            </div>
+            <div class="visit-item">
+              <div class="visit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <p>Spring - Fall: 11 AM - 8 PM<br>Special Events: Varies</p>
+              </div>
+            </div>
+            <div class="visit-item">
+              <div class="visit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <p>(205) 871-9525</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="visit-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p>The Boxcar Cafe is an outdoor venue. Service may be affected by weather conditions.</p>
+          </div>
+        </div>
+        <div class="visit-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.123456789!2d-86.8!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88891bd3d1e0b0a1%3A0x8e1b1e0c0c0c0c0c!2sRailroad%20Park!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Order Ahead or<br>Book an Event</h2>
+          <p class="section-desc">Skip the line or plan your next park gathering. We'd love to hear from you.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option value="order">Order Ahead</option>
+              <option value="event">Private Event Inquiry</option>
+              <option value="catering">Catering</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="32" height="20" rx="2" fill="#B5543F"/>
+              <rect x="9" y="14" width="8" height="6" rx="1" fill="#F5F0E8" opacity="0.35"/>
+              <rect x="23" y="14" width="8" height="6" rx="1" fill="#F5F0E8" opacity="0.35"/>
+              <circle cx="13" cy="33" r="3.5" fill="#2C2418" stroke="#B5543F" stroke-width="1"/>
+              <circle cx="27" cy="33" r="3.5" fill="#2C2418" stroke="#B5543F" stroke-width="1"/>
+            </svg>
+            <span>BOXCAR CAFE</span>
+          </div>
+          <p>Michael's @ The Boxcar at Railroad Park. Birmingham's favorite outdoor dining destination.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#events">Events</a>
+          <a href="#visit">Visit</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Railroad Park</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:2058719525">(205) 871-9525</a>
+          <a href="#">1600 1st Ave S</a>
+          <a href="#">Birmingham, AL 35233</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxcar Cafe at Railroad Park. All rights reserved.</p>
+        <p class="footer-credit">Website by <a href="https://williamsdigital.io" target="_blank">Williams Digital</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="boxcar-cafe.js"></script>
+</body>
+</html>
