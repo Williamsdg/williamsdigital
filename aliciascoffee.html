@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia's Coffee | A.G. Gaston Motel, Birmingham AL</title>
+  <meta name="description" content="Coffee is a connection. Alicia's Coffee serves organic, responsibly sourced coffee at the historic A.G. Gaston Motel in Birmingham, Alabama.">
+  <link rel="stylesheet" href="aliciascoffee.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="coffee-animation">
+        <div class="pour-stream"></div>
+        <div class="cup-group">
+          <div class="cup">
+            <div class="coffee-fill"></div>
+          </div>
+          <div class="cup-handle"></div>
+          <div class="saucer"></div>
+        </div>
+        <div class="steam">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <p class="loader-brand">Alicia's Coffee</p>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Alicia's Coffee</a>
+      <nav class="nav" id="nav">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#blends" class="nav-link">Blends</a>
+        <a href="#signature" class="nav-link">Signature</a>
+        <a href="#visit" class="nav-link">Visit Us</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#story">Our Story</a>
+      <a href="#blends">Blends</a>
+      <a href="#signature">Signature</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/3576/3576-720.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">A.G. Gaston Motel &bull; Birmingham, Alabama</p>
+      <h1 class="hero-title">Coffee is a<br><em>Connection</em></h1>
+      <p class="hero-desc">Organic, responsibly sourced coffee served in a space rich with history, community, and heart.</p>
+      <div class="hero-actions">
+        <a href="#visit" class="btn btn-primary">Visit Us</a>
+        <a href="#blends" class="btn btn-ghost">Explore Blends</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="split-grid">
+        <div class="split-image reveal-left">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Warm coffee moment" loading="lazy">
+        </div>
+        <div class="split-content reveal-right">
+          <p class="eyebrow">Our Story</p>
+          <h2>A Healing Place<br>for All</h2>
+          <p>Founded in 2020 by <strong>Naimah Alicia Elmore</strong> and <strong>Rashad Harrell</strong>, Alicia's Coffee was born from a simple belief: coffee shops are healing places &mdash; safe spaces for people of all ages and backgrounds to come together, share stories, and build connection.</p>
+          <p>Nestled inside the historic <strong>A.G. Gaston Motel</strong> &mdash; built in 1954 and designated a Birmingham Civil Rights National Monument by President Obama in 2017 &mdash; we honor the legacy of community and courage that defines this sacred space.</p>
+          <p>Selected by Birmingham's Historic Preservation Authority to operate at the motel, we serve every cup with intention, guided by our founding principle:</p>
+          <blockquote>&ldquo;Coffee is a connection.&rdquo;</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLENDS ============ -->
+  <section class="section blends-section" id="blends">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">Our Blends</p>
+        <h2>Three Signature Origins</h2>
+        <p class="section-subtitle">Each blend tells a story of careful sourcing and organic, responsibly grown beans with unique flavors.</p>
+      </div>
+      <div class="blends-grid">
+        <div class="blend-card reveal-up">
+          <div class="blend-image">
+            <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?w=600&q=80" alt="Brazilian coffee blend" loading="lazy">
+          </div>
+          <div class="blend-info">
+            <h3>Brazilian</h3>
+            <p>Rich, smooth, and full-bodied with notes of chocolate and toasted nuts. Our most comforting blend.</p>
+          </div>
+        </div>
+        <div class="blend-card reveal-up" style="--delay: 0.1s">
+          <div class="blend-image">
+            <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=600&q=80" alt="Costa Rican coffee blend" loading="lazy">
+          </div>
+          <div class="blend-info">
+            <h3>Costa Rican</h3>
+            <p>Bright and clean with a honey-like sweetness and delicate citrus undertones. A morning favorite.</p>
+          </div>
+        </div>
+        <div class="blend-card reveal-up" style="--delay: 0.2s">
+          <div class="blend-image">
+            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=600&q=80" alt="Colombian coffee blend" loading="lazy">
+          </div>
+          <div class="blend-info">
+            <h3>Colombian</h3>
+            <p>Balanced and versatile with caramel sweetness and a smooth, lingering finish. An everyday essential.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROOM 30 ============ -->
+  <section class="section signature-section" id="signature">
+    <div class="container">
+      <div class="split-grid split-grid-reverse">
+        <div class="split-content reveal-left">
+          <p class="eyebrow">Signature Drink</p>
+          <h2>The Room 30</h2>
+          <p>Our handcrafted signature latte &mdash; <strong>oat milk, two shots of espresso, and raspberry syrups</strong> &mdash; named in honor of the room where Rev. Martin Luther King Jr. planned the Birmingham campaign during his stays at the A.G. Gaston Motel.</p>
+          <p>Every sip carries the spirit of courage, connection, and community that defines this historic space.</p>
+          <div class="drink-details">
+            <div class="drink-detail">
+              <span class="detail-label">Base</span>
+              <span>Oat Milk</span>
+            </div>
+            <div class="drink-detail">
+              <span class="detail-label">Espresso</span>
+              <span>Double Shot</span>
+            </div>
+            <div class="drink-detail">
+              <span class="detail-label">Flavor</span>
+              <span>Raspberry</span>
+            </div>
+          </div>
+        </div>
+        <div class="split-image reveal-right">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=800&q=80" alt="The Room 30 signature latte" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU HIGHLIGHTS ============ -->
+  <section class="section menu-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">On the Menu</p>
+        <h2>More Than Just Coffee</h2>
+      </div>
+      <div class="menu-grid reveal-up">
+        <div class="menu-item">
+          <h3>Coffee &amp; Espresso</h3>
+          <p>Brazilian, Costa Rican, and Colombian blends served hot or iced. Lattes, cappuccinos, and Americanos.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Smoothies &amp; Teas</h3>
+          <p>Refreshing fruit smoothies and a curated selection of premium teas for every palate.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Breakfast Sandwiches</h3>
+          <p>Fresh, satisfying breakfast sandwiches made to order every morning.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Pastries &amp; Sweets</h3>
+          <p>Baked goods from local African-American baker <strong>Amber's Desserts</strong> &mdash; fresh daily.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Seasonal Specials</h3>
+          <p>Rotating seasonal creations like our King Cake Latte &mdash; always something new to discover.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Gift Cards</h3>
+          <p>Share the connection. Gift cards available in-store for every occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT US ============ -->
+  <section class="section visit-section" id="visit">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="eyebrow">Visit Us</p>
+        <h2>Find Us at the Historic<br>A.G. Gaston Motel</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card reveal-up">
+          <div class="visit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Location</h3>
+          <p>A.G. Gaston Motel<br>1510 5th Avenue North<br>Birmingham, AL</p>
+          <a href="https://maps.google.com/?q=1510+5th+Ave+N+Birmingham+AL" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Get Directions</a>
+        </div>
+        <div class="visit-card reveal-up" style="--delay: 0.1s">
+          <div class="visit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday &ndash; Saturday</span><span>7:00 AM &ndash; 4:00 PM</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div class="visit-card reveal-up" style="--delay: 0.2s">
+          <div class="visit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Connect</h3>
+          <p>info@aliciascoffee.com</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/aliciascoffeellc/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/AliciasCoffeeLLC/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HISTORY BANNER ============ -->
+  <section class="history-banner">
+    <div class="container">
+      <div class="history-content reveal-up">
+        <p class="eyebrow">The Legacy</p>
+        <h2>A Monument to Courage</h2>
+        <p>The A.G. Gaston Motel, built in 1954 by entrepreneur A.G. Gaston, served as a meeting place for civil rights leaders including Dr. Martin Luther King Jr. Restored with a $10 million city investment and support from the Mellon Foundation, it stands today as a Birmingham Civil Rights National Monument &mdash; and we're proud to call it home.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">Alicia's Coffee</p>
+          <p class="footer-tagline">Coffee is a connection.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#story">Our Story</a>
+          <a href="#blends">Blends</a>
+          <a href="#signature">Room 30</a>
+          <a href="#visit">Visit</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/aliciascoffeellc/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/AliciasCoffeeLLC/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>1510 5th Avenue North, Birmingham, AL &bull; Black-Owned &bull; Est. 2020</p>
+        <p>&copy; 2026 Alicia's Coffee LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="aliciascoffee.js"></script>
+</body>
+</html>
